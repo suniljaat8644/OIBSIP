@@ -2,33 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     line-height: 1.6;
-    color: #333;
+    color: #f8fafc;
+    background: #0b0f19;
 }
 
-/* Sticky Navbar */
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.2rem 8%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 1000;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: #2575fc;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.logo span {
+    color: #6366f1;
 }
 
 .nav-links {
@@ -39,84 +45,151 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #555;
+    color: #94a3b8;
     font-weight: 500;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #2575fc;
+    color: #6366f1;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.2) 0%, rgba(11, 15, 25, 1) 70%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+}
+
+.hero-badge {
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 1.5rem;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-btn {
-    background: #ff4757;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
     color: #fff;
-    padding: 0.75rem 2rem;
-    border-radius: 5px;
+    padding: 0.9rem 2.2rem;
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .cta-btn:hover {
-    background: #ff6b81;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.5);
 }
 
-/* Content Section */
+/* Features */
 .content-section {
-    padding: 5rem 10%;
+    padding: 6rem 10%;
     text-align: center;
-    background: #f9f9f9;
+}
+
+.section-badge {
+    color: #818cf8;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
 }
 
 .content-section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
     margin-bottom: 3rem;
 }
 
 .feature-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .feature-card {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    flex: 1;
-    min-width: 250px;
-    max-width: 350px;
+    background: #161e2e;
+    border: 1px solid #232d3f;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #6366f1;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 10%;
+    text-align: center;
+    background: #111827;
+    border-top: 1px solid #1f2937;
+    border-bottom: 1px solid #1f2937;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Footer */
 footer {
-    background: #222;
-    color: #fff;
+    background: #090d16;
+    color: #64748b;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
+    font-size: 0.9rem;
 }
