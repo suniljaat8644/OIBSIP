@@ -1,1 +1,27 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: #0f172a; color: #f8fafc; line-height: 1.6; }
 
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 8%; background: #1e293b; position: fixed; width: 100%; top: 0; z-index: 1000; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #38bdf8; }
+.nav-links { list-style: none; display: flex; gap: 2rem; }
+.nav-links a { color: #f8fafc; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+.nav-links a:hover { color: #38bdf8; }
+
+.hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 1rem; }
+.hero h1 { font-size: 3rem; }
+.hero h1 span { color: #38bdf8; }
+.hero p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
+
+.section { padding: 5rem 10%; text-align: center; }
+.section h2 { font-size: 2rem; margin-bottom: 2rem; color: #38bdf8; }
+
+.skills-grid { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.skill { background: #1e293b; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; border: 1px solid #334155; }
+
+.project-grid { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.project-card { background: #1e293b; padding: 2rem; border-radius: 8px; border: 1px solid #334155; width: 280px; text-align: left; }
+.project-card h3 { color: #38bdf8; margin-bottom: 0.5rem; }
+
+footer { background: #0b0f19; padding: 2rem; text-align: center; }
+footer a { color: #38bdf8; text-decoration: none; }
