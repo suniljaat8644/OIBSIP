@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Choudhary | Portfolio</title>
+    <title>Sunil Choudhary | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
-            <div class="logo">SC</div>
+            <div class="logo">Sunil<span>.dev</span></div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -20,42 +22,64 @@
     </header>
 
     <section class="hero">
-        <h1>Hi, I'm <span>Sunil Choudhary</span></h1>
-        <p>Web Developer & AI/DS Undergraduate</p>
+        <div class="hero-badge">Available for Projects</div>
+        <h1>Hi, I'm <span class="highlight">Sunil Choudhary</span></h1>
+        <p class="subtitle">AI & Data Science Student | Full-Stack Web Developer</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
     </section>
 
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Passionate developer building modern web applications and exploring AI solutions.</p>
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I build responsive web applications, explore machine learning solutions, and develop user-centered visual experiences. Currently specializing in Artificial Intelligence & Data Science while mastering full-stack web engineering.
+        </p>
     </section>
 
     <section id="skills" class="section">
-        <h2>Skills</h2>
+        <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS3</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">C++</div>
-            <div class="skill">Python</div>
+            <div class="skill-card">HTML5 / CSS3</div>
+            <div class="skill-card">JavaScript (ES6+)</div>
+            <div class="skill-card">C++ / Algorithms</div>
+            <div class="skill-card">Python & ML</div>
+            <div class="skill-card">Git & GitHub</div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2>Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Landing Page</h3>
-                <p>A sleek static landing page built with HTML5 and CSS3.</p>
+                <span class="card-tag">Web App</span>
+                <h3>Temperature Converter</h3>
+                <p>Interactive temperature conversion tool featuring real-time input checks and absolute zero protection.</p>
+                <div class="card-links">
+                    <a href="../WebDev-L1-TempConverter/" target="_blank">Live Demo →</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Temp Converter</h3>
-                <p>Interactive web app that converts temperatures in real-time.</p>
+                <span class="card-tag">UI Design</span>
+                <h3>Product Landing Page</h3>
+                <p>Fully responsive, visual landing page with clean CTA sections and modern typography[cite: 1].</p>
+                <div class="card-links">
+                    <a href="../WebDev-L1-LandingPage/" target="_blank">Live Demo →</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
-        <p>Connect with me on <a href="https://linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
+        <h2>Let's Work Together</h2>
+        <p>Connect with me on social platforms or visit my repository[cite: 1].</p>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com/suniljaat8644/OIBSIP" target="_blank">GitHub</a>
+        </div>
+        <p class="copyright">&copy; 2026 Sunil Choudhary. Built for Oasis Infobyte SIP[cite: 1].</p>
     </footer>
+
 </body>
 </html>
